@@ -28,9 +28,10 @@ url: "https://vukradovanovic.github.io/" # the base hostname & protocol for your
 github_username:  vukRadovanovic
 
 # Build settings
-theme: no-style-please
+remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
