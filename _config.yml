@@ -28,7 +28,7 @@ url: "https://vukradovanovic.github.io/" # the base hostname & protocol for your
 github_username:  vukRadovanovic
 
 # Build settings
-theme: minima
+theme: no-style-please
 plugins:
   - jekyll-feed
 
