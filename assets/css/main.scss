@@ -1,0 +1,88 @@
+---
+---
+@import "no-style-please";
+@import "popup";
+
+.w { margin: 0 auto 0 10%; }
+
+nav ul {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+// nav ul + ul { margin-top: 0.5rem; }
+nav .open { margin-bottom: calc(1.4em + 0.5rem); }
+nav .open > ul { 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  white-space: nowrap;
+}
+nav li { margin: 0; position: relative; }
+nav [aria-current]::before { content: "/"; }
+nav [aria-current]::after { content: "/"; }
+nav .open::after { 
+  content: "^";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  line-height: 1;
+}
+
+nav + hr { margin: 1rem 0; }
+nav + hr + * { margin-top: 0; }
+
+.projects { display: flex; flex-direction: column; gap: 3rem; }
+.project { display: flex; gap: 1rem; align-items: start; }
+.project:nth-child(even) { flex-direction: row-reverse; text-align: right; }
+.project img { width: 40%; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; }
+.project > div { flex: 1; }
+.project p { margin: 0.5rem 0 0; }
+
+
+
+.post-list { list-style: none; padding: 0; }
+.post-list li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+
+// .project { display: flex; gap: 1rem; }
+// .project:nth-child(even) { flex-direction: row-reverse; }
+
+
+// @import "no-style-please";
+// @import "popup";
+// .w {
+//   max-width: 640px;
+//   margin: 0 auto 0 10%;
+//   padding: 4rem 2rem;
+// }
+// nav li { margin: 0; }
+// nav + hr { margin: 1rem 0; }
+// nav + hr + * { margin-top: 0; }
+// nav + nav { margin-top: 0.5rem; }
+// nav ul {
+//     margin: 0;
+//     display: flex;
+//     gap: 1rem;
+//     list-style: none;
+//     padding: 0;
+// }
+// nav a[aria-current] {
+//   &::before { content: "/"; }
+//   &::after  { content: "/"; }
+// }
+// nav li.open {
+//   position: relative;
+//   &::after {
+//     content: "^";
+//     position: absolute;
+//     top: 100%;          // just below the link
+//     left: 10%;
+//     // translate: -50% 0;  // centred under it
+//     line-height: 1;
+//   }
+// }

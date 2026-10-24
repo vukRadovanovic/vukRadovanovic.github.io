@@ -1,0 +1,8 @@
+<!-- a popup-style draggable div -->
+<div class="popup {{ include.class }}" style="--x: {{ include.x }}px; --y: {{ include.y }}px;">
+  <div class="popupheader">
+    <span>{{ include.title }}</span>
+    <button class="popupclose" aria-label="Close">x</button>
+  </div>
+  <div class="popupbody">{{ include.content | markdownify }}</div>
+</div>

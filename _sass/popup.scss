@@ -1,0 +1,46 @@
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  translate: var(--x) var(--y);
+  z-index: 10;
+  min-width: 12rem;
+  max-width: 20rem;
+  background: white;
+  border: 1px solid black;
+  &.dragging { box-shadow: 2px 2px 0 black; }
+  font-size: medium;
+}
+
+.popupheader {
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  touch-action: none;
+  user-select: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.1rem 0.2rem 0.1rem 0.5rem;
+}
+
+.popupclose {
+  font: inherit;
+  line-height: 1;
+  border: 0;
+  padding: 0.15rem 0.2rem 0.01rem;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.popupbody {
+  padding: 0.5rem 1rem;
+  > :first-child { margin-top: 0; }
+  > :last-child  { margin-bottom: 0; }
+}
+
+.image-popup .popupbody {
+  padding: 0;
+}

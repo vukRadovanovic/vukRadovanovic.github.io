@@ -1,0 +1,22 @@
+
+entries:
+  - title: home
+    url: /
+
+  - title: graphics
+    url: /graphics/
+
+  - title: audio
+    url: /audio/
+
+  - title: research
+    url: /research/
+
+  - title: posts
+    url: /posts/
+
+  - title: about
+    url: /about/
+
+
+  

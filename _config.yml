@@ -26,6 +26,38 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vukradovanovic.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  vukRadovanovic
+# favicon: "favicon.png"
+
+permalink: /posts/:title/
+
+collections:
+  graphics:
+    output: true
+    permalink: /graphics/:name/
+  audio:
+    output: true
+    permalink: /audio/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+
+defaults:
+  - scope: { type: graphics }
+    values: { layout: page, subnav: graphics, submenu: true }
+  - scope: { type: audio }
+    values: { layout: page, subnav: audio, submenu: true }
+  - scope: { type: research }
+    values: { layout: page, subnav: research, submenu: true }
+  - scope: { type: posts }
+    values: { layout: post, subnav: posts }
+
+
+theme_config:
+  appearance: "auto"
+  back_home_text: "<<"
+  date_format: "%Y-%m"
+  show_description: false
+  lowercase_titles: true
 
 # Build settings
 remote_theme: riggraz/no-style-please
