@@ -44,45 +44,19 @@ nav + hr + * { margin-top: 0; }
 .project p { margin: 0.5rem 0 0; }
 
 
-
 .post-list { list-style: none; padding: 0; }
 .post-list li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+@media (max-width: 40rem) {
+  .w { margin: 0; padding: 2rem 1rem; }
+  nav > ul { flex-wrap: wrap; }
+  nav ul { row-gap: 0.1rem; }
+  nav .open { display: contents; }
+  nav .open::after { content: none; }
+  nav .open > ul { position: static; order: 1; flex-basis: 100%; flex-wrap: wrap; white-space: normal; margin-top: 0; }
+  nav .open > ul::before { content: "^"; flex-basis: 100%; text-align: center; line-height: 1; }
+  .project, .project:nth-child(even) { flex-direction: column; text-align: left; }
+  .project img { width: 100%; }
+  .popup { position: static; translate: none; max-width: none; margin: 1rem 0; }
+}
 
-// .project { display: flex; gap: 1rem; }
-// .project:nth-child(even) { flex-direction: row-reverse; }
-
-
-// @import "no-style-please";
-// @import "popup";
-// .w {
-//   max-width: 640px;
-//   margin: 0 auto 0 10%;
-//   padding: 4rem 2rem;
-// }
-// nav li { margin: 0; }
-// nav + hr { margin: 1rem 0; }
-// nav + hr + * { margin-top: 0; }
-// nav + nav { margin-top: 0.5rem; }
-// nav ul {
-//     margin: 0;
-//     display: flex;
-//     gap: 1rem;
-//     list-style: none;
-//     padding: 0;
-// }
-// nav a[aria-current] {
-//   &::before { content: "/"; }
-//   &::after  { content: "/"; }
-// }
-// nav li.open {
-//   position: relative;
-//   &::after {
-//     content: "^";
-//     position: absolute;
-//     top: 100%;          // just below the link
-//     left: 10%;
-//     // translate: -50% 0;  // centred under it
-//     line-height: 1;
-//   }
-// }
