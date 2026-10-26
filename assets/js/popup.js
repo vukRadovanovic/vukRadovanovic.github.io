@@ -11,6 +11,7 @@ document.addEventListener('pointerdown', e => {
   const header = e.target.closest('.popupheader');
   if (!header) return;
   const el = header.parentElement;
+  if (getComputedStyle(el).position !== 'absolute') return;
   el.style.zIndex = ++topZ;
   el.classList.add('dragging')
 

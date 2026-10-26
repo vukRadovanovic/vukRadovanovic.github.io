@@ -30,26 +30,44 @@ github_username:  vukRadovanovic
 
 permalink: /posts/:title/
 
+# collections:
+#   graphics:
+#     output: true
+#     permalink: /graphics/:name/
+#   audio:
+#     output: true
+#     permalink: /audio/:name/
+#   research:
+#     output: true
+#     permalink: /research/:name/
+#   code:
+#     output: true
+#     permalink: /code/:name/
+
+# defaults:
+#   - scope: { type: graphics }
+#     values: { layout: page, subnav: graphics, submenu: true }
+#   - scope: { type: audio }
+#     values: { layout: page, subnav: audio, submenu: true }
+#   - scope: { type: research }
+#     values: { layout: page, subnav: research, submenu: true }
+#   - scope: { type: code }
+#     values: { layout: page, subnav: code, submenu: true }
+#   - scope: { type: posts }
+#     values: { layout: post, subnav: posts }
+
 collections:
-  graphics:
-    output: true
-    permalink: /graphics/:name/
-  audio:
-    output: true
-    permalink: /audio/:name/
-  research:
-    output: true
-    permalink: /research/:name/
+  graphics: { output: true }
+  audio: { output: true }
+  research: { output: true }
+  code: { output: true }
 
 defaults:
-  - scope: { type: graphics }
-    values: { layout: page, subnav: graphics, submenu: true }
-  - scope: { type: audio }
-    values: { layout: page, subnav: audio, submenu: true }
-  - scope: { type: research }
-    values: { layout: page, subnav: research, submenu: true }
-  - scope: { type: posts }
-    values: { layout: post, subnav: posts }
+  - scope: { path: "" }
+    values: { layout: default, submenu: true }
+  - scope: { path: "", type: posts }
+    values: { layout: post, submenu: false }
+
 
 
 theme_config:

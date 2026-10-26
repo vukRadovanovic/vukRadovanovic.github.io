@@ -10,6 +10,8 @@ Hi, welcome to my website!
 
 If you're interested, you can check out<br>some of my work using the links above.
 
+Or, if you'd like to chat about anything,<br>head over to the [about](/about) section to find my<br>contact info.
+
 
 {% capture body %}
 My paper, *Physically Based Rendering in the Latent Space*,

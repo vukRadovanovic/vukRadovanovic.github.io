@@ -11,7 +11,7 @@
             <p>{{ site.description }}</p>
           {%-endif-%}
         </header>
-        {%-include menu_item.html collection=site.data.menu.entries-%}
+        {%- include menu.html -%}
         {{ content }}
       </div>
     </main>

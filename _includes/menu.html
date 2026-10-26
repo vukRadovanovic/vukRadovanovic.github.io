@@ -1,4 +1,5 @@
-{%- assign section = '/' | append: page.subnav | append: '/' -%}
+{%- assign sub = page.subnav | default: page.collection -%}
+{%- assign section = '/' | append: sub | append: '/' -%}
 
 <nav>
   <ul>
@@ -7,7 +8,7 @@
       <a href="{{ item.url | relative_url }}"{% if page.url == item.url or item.url == section %} aria-current="page" {% endif %}>{{ item.title }}</a>
       {%- if item.url == section -%}
       <ul>
-        {%- assign subs = site[page.subnav] | where: "submenu", true -%}
+        {%- assign subs = site[sub] | where: "submenu", true -%}
         {%- for sub in subs limit: 5 -%}
         <li><a href="{{ sub.url | relative_url }}"{% if page.url == sub.url %} aria-current="page"{% endif %}>{{ sub.title }}</a></li>
         {%- endfor -%}

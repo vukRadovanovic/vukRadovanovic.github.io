@@ -12,6 +12,9 @@ entries:
   - title: research
     url: /research/
 
+  - title: code
+    url: /code/
+
   - title: posts
     url: /posts/
 

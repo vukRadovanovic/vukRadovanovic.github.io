@@ -1,5 +1,4 @@
 ---
-layout: page
 title: wip-seere
 image: assets/images/vkrust.png
 fit: contain

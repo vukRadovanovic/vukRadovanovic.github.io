@@ -1,5 +1,4 @@
 ---
-layout: page
 title: latent-render
 image: assets/images/latent-cbox.gif
 fit: contain
