@@ -1,6 +1,6 @@
 ---
 title: ray-tracer
-image: assets/images/graphics/dragon.png
+image: graphics/media/dragon.png
 abstract: A C++ ray tracing renderer written entirely from scratch.
 ---
 

@@ -1,14 +1,15 @@
 ---
 title: music
-image: assets/images/fl.png
+image: audio/media/fl.png
 fit: contain
 crop: top
 abstract: My explorations with synthesis, composition, and hardware.
 ---
 
-My music production journey began in elementary school, where I spent ages playing around with GarageBand on the big boxy iMacs we had in the computer lab.  I came home wanting to do more, but since we were exclusively a Windows family, I had to find some alternative.  After a bit of quick web searching, I found Acid Xpress 7.0, a freeware loop-based production software that suited my needs (and lack of skillset) perfectly. And as an added bonus, its website sported that wonderful frutiger aero aesthetic that the internet is particularly fond of these days.
+My music production journey began in elementary school, where I spent ages playing around with GarageBand on the big boxy iMacs we had in the computer lab.  I came home wanting to do more, but since we were exclusively a Windows family, I had to find some alternative.  After a bit of quick web searching, I found Acid Xpress 7.0, a freeware loop-based production software that suited my needs (and lack of skillset) perfectly. 
 
-![Internet Archive screenshot of the Acid Xpress download page](/assets/images/audio/acid-xpress.png)
+![Internet Archive screenshot of the Acid Xpress download page](/audio/media/acid-xpress.png)
+As an added bonus, its website sported that wonderful frutiger aero aesthetic that the internet is particularly fond of these days.
 
 I wish I still had those old projects available, but I don't think I really understood the concept of saving my work yet - I would just sit there enjoying the loops I had made for a bit before closing the software, never actually exporting anything.  And even if I did save any .mp3s anywhere, those files are unfortunately long lost.
 
@@ -21,8 +22,8 @@ I can't remember if it was my birthday, or Christmas, or some other occasion, bu
 
 At my undergrad, I chose Music as my minor subject.  I took a few computer music courses, and you can read about the DSP projects that I worked on on the other [/audio/](/audio) pages.  I was interested in the higher-level, practical aspects of production too - I ended up taking an Ableton production class, and followed it up with a studio class where we learned about active listening, microphone types, multitrack/stereo miking techniques, and mixing basics.
 
-![Microphone setup for 174A final project](/assets/images/mics.jpg)
-<audio src="{{ '/assets/images/final-mix.mp3' | relative_url }}" controls preload="metadata"></audio>
+![Microphone setup for 174A final project](/audio/media/mics.jpg)
+<audio src="{{ '/audio/media/final-mix.mp3' | relative_url }}" controls preload="metadata"></audio>
 
 Shown above is the mic setup we had to record three vocalists, one of whom was playing the piano, as they performed "Still in Love" by Thirdstory.  The audio file is my final mix. It was quite the privilege to have access to so much high-quality recording equipment, and work with such talented musicians.  It was such a great time that I really hope I'll get the chance to do some studio engineering at some point in the future.
 

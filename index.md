@@ -21,7 +21,7 @@ was recently presented at Pacific Graphics 2026!
 
 
 {% capture body %}
-![latent cbox]({{ 'assets/images/latent-cbox.gif' | relative_url }})
+![latent cbox]({{ 'research/media/latent-cbox.gif' | relative_url }})
 {% endcapture %}
 {% include popup.html x=497 y=411 title="cbox" content=body class="image-popup" %}
 

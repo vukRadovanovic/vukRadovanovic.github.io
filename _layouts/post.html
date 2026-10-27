@@ -2,7 +2,16 @@
 layout: default
 ---
 
-{%-include back_link.html-%}
+{%- capture pager -%}
+{%- if page.previous or page.next -%}
+<p class="pager">
+  {%- if page.previous %}<a href="{{ page.previous.url | relative_url }}" rel="prev">&lt;&lt; prev</a>{% endif -%}
+  {%- if page.next %}<a href="{{ page.next.url | relative_url }}" rel="next">next &gt;&gt;</a>{% endif -%}
+</p>
+{%- endif -%}
+{%- endcapture -%}
+
+{{ pager }}
 
 <article>
   <p class="post-meta">
@@ -13,3 +22,5 @@ layout: default
 
   {{ content }}
 </article>
+
+{{ pager }}

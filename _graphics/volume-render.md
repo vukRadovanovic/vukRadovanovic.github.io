@@ -1,7 +1,7 @@
 ---
 title: volume-render
 abstract: An OptiX-accelerated extension of the ray tracer above, with added volume ray marching functionality.
-image: assets/images/graphics/final-images/volumeshadow.png
+image: graphics/media/final-images/volumeshadow.png
 fit: contain
 crop: top
 ---

@@ -5,18 +5,23 @@ entries:
 
   - title: graphics
     url: /graphics/
+    sub: [ray-tracer, volume-render, wip-seere]
 
   - title: audio
     url: /audio/
-
-  - title: research
-    url: /research/
+    sub: [pendulum-mod, heterodyne, fold-delay, music]
 
   - title: code
     url: /code/
+    sub: [rustlings, vgrad]
+
+  - title: research
+    url: /research/
+    sub: [latent-render]
 
   - title: posts
     url: /posts/
+    sub: [hello-world]
 
   - title: about
     url: /about/

@@ -1,12 +1,12 @@
 ---
 title: pendulum-mod
-image: assets/images/pendulum.gif
+image: audio/media/pendulum.gif
 fit: contain
 crop: top
 abstract: A double pendulum simulation from scratch in Pure Data, used to generate continouous random modulation signals.
 ---
 
-![Pendulum patch](/assets/images/double-pendulum.png)
+![Pendulum patch](/audio/media/double-pendulum.png)
 
 For the final project for MUS171, we had to propose a unique project to the teacher so that no two projects were alike.  What I landed on was a fun combination of some of my favorite interests - graphics, physics, and of course, music production.  I wanted to create a physics simulation that would drive modulation parameters, and the chaos of a double pendulum seemed perfect for that.
 
@@ -14,11 +14,11 @@ I implemented the Runge-Kutta method, as documented on [the web simulation that 
 
 As for the simulation...
 
-![Sim code](/assets/images/sim-code.png)
+![Sim code](/audio/media/sim-code.png)
 
 ...it was a bit of a mess, but straightforward enough to follow the formulae on the website above.  The toughest part was, surprisingly, variable management: organizing all of my sends/receives, and tracking which simulation variables corresponded to which expr variables, turned out to be very human-error-prone.  More time than I would like to admit was spent on finding which variables were going into the wrong inlets!
 
 In the end, though, I was left with a fun little simulation, all running natively in Pd without any external physics sim libraries.  If you'd like to try it out for yourself, you can grab the patch from [my Pd projects repo](https://github.com/vukRadovanovic/pd-projects).
 
-![Pendulum gif](/assets/images/pendulum.gif)
+![Pendulum gif](/audio/media/pendulum.gif)
 *wheeee*

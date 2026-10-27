@@ -1,7 +1,7 @@
 ---
 title: heterodyne
 abstract: An 80-voice heterodyne synthesizer.
-image: assets/images/heterodyne-patch.png
+image: audio/media/heterodyne-patch.png
 fit: contain
 crop: top
 ---
@@ -11,6 +11,6 @@ For this project, I implemented an older, less commonly used technique.  I used 
 I also included some controllable filtering of those 80 voices, such that only voices of selected semitones would be enabled.  That way, you could input a chord, and then only the synths corresponding to that frequency would respond to the input signal - almost like a coarse tuned resynthesis of the original sound.
 
 You can watch a short demo video here:
-<video src="{{ '/assets/images/heterodyne.mp4' | relative_url }}" controls></video>
+<video src="{{ '/audio/media/heterodyne.mp4' | relative_url }}" controls></video>
 
 Or, if you'd like to try it out for yourself, you can check out the source code at [my Pd projects GitHub repo](https://github.com/vukRadovanovic/pd-projects).

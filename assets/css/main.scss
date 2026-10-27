@@ -33,6 +33,11 @@ nav + hr + * { margin-top: 0; }
 
 audio, video { display: block; width: 100%; }
 p:has(+ audio) { margin-bottom: 0; }
+p:has(> img) { text-align: center; font-style: italic; }
+
+.pager { display: flex; font-size: smaller }
+.pager [rel=next] { margin-left: auto; }
+
 
 // Mobile
 @media (max-width: 40rem) {
@@ -45,54 +50,3 @@ p:has(+ audio) { margin-bottom: 0; }
   .project img { width: 100%; }
   .popup { position: static; translate: none; max-width: none; margin: 1rem 0; }
 }
-
-
-// ---
-// ---
-// @import "no-style-please";
-// @import "popup";
-
-// .w { margin: 0 auto 0 10%; }
-
-// html:has(> body[a="dark"]) { background: black; }
-// @media (prefers-color-scheme: dark) { html:has(> body[a="auto"]) { background: black; } }
-
-// // Menu
-// nav ul { display: flex; align-items: start; gap: 1rem; list-style: none; margin: 0; padding: 0; }
-// nav li { margin: 0; position: relative; }
-// nav [aria-current]::before, nav [aria-current]::after { content: "/"; }
-// nav .open { margin-bottom: calc(1.4em + 0.5rem); }
-// nav .open > ul { position: absolute; top: 100%; left: 10%; margin-top: 0.5rem; white-space: nowrap; }
-// nav .open > ul::before { content: "^"; margin-right: -0.5rem; }
-// nav + hr { margin: 1rem 0; }
-// nav + hr + * { margin-top: 0; }
-
-// // Section pages
-// .projects { display: flex; flex-direction: column; gap: 3rem; }
-// .project { display: flex; gap: 1rem; align-items: start; }
-// .project:nth-child(even) { flex-direction: row-reverse; text-align: right; }
-// .project img { width: 40%; aspect-ratio: 4 / 3; margin: 0; }
-// .project > div { flex: 1; }
-// .project p { margin: 0.5rem 0 0; }
-
-// .post-list { list-style: none; padding: 0; }
-// .post-list li { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-// // Mobile
-// @media (max-width: 40rem) {
-//   .w { margin: 0; padding: 2rem 1rem; }
-//   nav ul { flex-wrap: wrap; row-gap: 0.1rem; }
-//   nav .open { display: contents; }
-//   nav .open > ul { position: static; order: 1; flex-basis: 100%; white-space: normal; margin-top: 0; }
-//   nav .open > ul::before { flex-basis: 100%; text-align: center; }
-//   .project, .project:nth-child(even) { flex-direction: column; text-align: left; }
-//   .project img { width: 100%; }
-//   .popup { position: static; translate: none; max-width: none; margin: 1rem 0; }
-// }
-
-// audio { display: block; width: 100%; }
-// p:has(+ audio) { margin-bottom: 0; }
-
-// video { width: 100%; }
-// @media (prefers-color-scheme: dark) { body[a="auto"] video { filter: invert(1); } }
-

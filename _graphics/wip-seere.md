@@ -1,6 +1,6 @@
 ---
 title: wip-seere
-image: assets/images/vkrust.png
+image: graphics/media/vkrust.png
 fit: contain
 crop: top
 abstract: My current pet project, a renderer written in Rust + Vulkan.
